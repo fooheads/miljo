@@ -20,7 +20,9 @@
     [malli.util :as mu]))
 
 
-(defn- get-env-name []
+(defn get-env-name
+  "Return the current ENV name, or `:dev` if not specified"
+  []
   (keyword (or (System/getenv "ENV") :dev)))
 
 
