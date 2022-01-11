@@ -1,0 +1,9 @@
+[:map
+ [:common :string]
+ [:override :int]
+ [:qualified/keyword :string]
+ [:not-common :string]
+ [:only-in-dev {:optional true} :string]
+ [:only-in-prod {:optional true} :string]
+ [:password :string]]
+
